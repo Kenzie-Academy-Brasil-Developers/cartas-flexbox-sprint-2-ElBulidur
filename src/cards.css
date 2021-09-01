@@ -12,6 +12,7 @@ html {
     /* display, flex-direction */
     display: flex;
     flex-direction: column;
+    width: 710px;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
@@ -51,6 +52,8 @@ html {
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    width: 710px;
+    margin: 0px auto;
   }
   
     .cardGroup__card {
@@ -71,4 +74,18 @@ html {
       flex-grow: 1;
       flex-shrink: 0;
       flex-basis: auto;
+    }
+
+    @media  (max-width: 600px){
+      
+      .cardGroup {
+      width: 320px;
+      height: 100vh;
+      margin: 0px auto;
+      flex-direction: column;
+      }
+      .cardGroup__card { 
+        position: relative;
+        max-width: 320px;
+      }
     }
